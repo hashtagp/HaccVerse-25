@@ -1,0 +1,49 @@
+.sponsors {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.sponsors > h1{
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4D00FF, #7302EC, #8304D9, #9A0BE1, #5607F5);
+    width: fit-content;
+    border-radius: 15px;
+    letter-spacing: 10px;
+}
+
+.sponsor-category {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sponsor-category h2 {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    letter-spacing: 2px;
+    padding: 0;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Anton SC', sans-serif;
+    color: #fff;
+}
+
+.sponsor-category .sponsor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors > h1{
+        font-size: 1.5rem;
+    }
+}

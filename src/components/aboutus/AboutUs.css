@@ -1,0 +1,163 @@
+.about-us {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    width: 80%; /* Adjust the size of the content */
+    background: black; /* Semi-transparent background for emphasis */
+    border-radius: 15px; /* Rounded corners for a clean look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .experience {
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+  
+  .experience > h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    background: linear-gradient(to bottom, #4D00FF, #7302EC, #8304D9, #9A0BE1, #5607F5);
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Press start 2P', cursive;
+    letter-spacing: 10px;
+  }
+  
+  .our-experience {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    background: url("../../assets/our-experience_bg.svg") no-repeat center center/cover;
+  }
+  
+  .our-experience h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Signika Negative', sans-serif;
+    letter-spacing: 10px;
+    color: #5A0087;
+  }
+  
+  .our-experience p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Signika Negative', sans-serif;
+    color: #fff; /* Change text color to black for better readability */
+  }
+  
+  .aboutus-name {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .aboutus-name .left > h1 {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-family: 'Signika Negative', sans-serif;
+    border-top: 1px solid #fff;
+    padding: 10px;
+  }
+  
+  .aboutus-name .left > h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .aboutus-name .left > p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    color: #ccc;
+    border: 1px solid #fff;
+    border-radius: 15px;
+  }
+  
+  .aboutus-name .text {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .text .aboutus-astronaut { /* Positions the astronaut relative to .text */
+    margin-top: -50%; /* Aligns to the top of the .text container */
+    margin-left: 50%; /* Aligns to the right of the .text container */
+    animation: float 4s infinite ease-in-out; /* Makes the astronaut float */
+  }
+  
+  .text h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .text p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 0.75rem;
+    color: #ccc;
+  }
+
+  .moon-phases{
+    margin: 0 auto;
+  }
+  
+  .right {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .experience > h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .about-us {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+  
+    .experience {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .aboutus-name .left > h1 {
+      font-size: 1.5rem;
+    }
+  
+    .aboutus-name .left > h2 {
+      font-size: 1.2rem;
+    }
+  
+    .aboutus-name .left > p {
+      font-size: 0.8rem;
+    }
+  
+    .text h2 {
+      font-size: 0.8rem;
+    }
+  
+    .text p {
+      font-size: 0.5rem;
+    }
+  }

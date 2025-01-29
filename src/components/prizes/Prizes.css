@@ -1,0 +1,188 @@
+.prizes h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    background: linear-gradient(to bottom, #4D00FF, #7302EC, #8304D9, #9A0BE1, #5607F5);
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.prizes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+    height: 250px;
+    gap: 1.5rem;
+    margin-top: 6rem;
+    width: 80%;
+}
+
+.card {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    padding: 1.5rem 0rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform 0.3s ease;
+}
+
+.card *{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.card.gold {
+    border: 5px solid gold;
+    height: 100%;
+}
+
+.card.silver {
+    border: 5px solid silver;
+    transform: perspective(600px) rotateY(-15deg);
+    height: 95%;
+    background: url("../../assets/silver_bg.svg") no-repeat center center;
+    background-color: #fff;
+}
+
+.card.bronze {
+    border: 5px solid #cd7f32;
+    transform: perspective(600px) rotateY(15deg);
+    height: 95%;
+    background: url("../../assets/bronze_bg.svg") no-repeat center center;
+    background-color: #fff;
+}
+
+.silver .prize-amount{
+    background-color: silver;
+}
+
+.gold .prize-amount{
+    background-color: gold;
+}
+
+.bronze .prize-amount{
+    background-color: #cd7f32;
+}
+
+.medal {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.prize-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.freshers {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.freshers span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .prizes h1{
+        font-size: 1.5rem;
+    }
+
+    .prizes-container{
+        margin-top: 4rem;
+    }
+
+    .card.gold{
+        height: 80%;
+    }
+
+    .card.silver{
+        height: 75%;
+    }
+
+    .card.bronze{
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prizes-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .card:nth-child(1){
+        order: 2;
+    }
+
+    .card:nth-child(2){
+        order: 1;
+    }
+
+    .card:nth-child(3){
+        order: 3;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .card.gold {
+        height: 250px;
+        transform: none;
+    }
+    
+    .card.silver {
+        height: 250px;
+        transform: none;
+    }
+    
+    .card.bronze {
+        height: 250px;
+        transform: none;
+    }
+}
