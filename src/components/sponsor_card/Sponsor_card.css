@@ -1,7 +1,6 @@
 .sponsor-card {
-    background-color: #ccc;
-    height: 200px;
-    width: 200px;
+    height: fit-content;
+    width: fit-content;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -13,19 +12,12 @@
 }
 
 .sponsor-logo {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 200px;
+    max-width: 200px;
     object-fit: contain;
     margin-bottom: 1rem;
 }
-
-.sponsor-name {
-    font-size: 1rem;
-    color: #333;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .sponsor-card {
         width: 150px;
         height: 150px;
@@ -64,4 +56,4 @@
         font-size: 0.6rem;
     }
     
-}
+} */

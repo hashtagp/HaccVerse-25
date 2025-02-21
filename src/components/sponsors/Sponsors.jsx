@@ -1,60 +1,43 @@
-import React from 'react'
-import './Sponsors.css'
-import Sponsor_card from '../sponsor_card/Sponsor_card'
+import React from 'react';
+import './Sponsors.css';
+import Sponsor_card from '../sponsor_card/Sponsor_card';
+import digitus from "../../assets/Digitus_logo.png";
+import polygon from "../../assets/Polygon_logo.webp";
+import ethereum from "../../assets/Ethereum_logo.webp";
+import devfolio from "../../assets/Devfolio_logo.webp";
 
 const Sponsors = () => {
   const sponsors = [
     {
-      category: 'gold',
-      sponsors: [
-        { name: 'Gold Sponsor 1', logo: 'gold1.png' },
-        { name: 'Gold Sponsor 2', logo: 'gold2.png' }
-      ]
+      logo: devfolio,
+      name: "Devfolio"
     },
     {
-      category: 'silver',
-      sponsors: [
-        { name: 'Silver Sponsor 1', logo: 'silver1.png' },
-        { name: 'Silver Sponsor 2', logo: 'silver2.png' }
-      ]
+      logo: polygon,
+      name: "Polygon"
     },
     {
-      category: 'platinum',
-      sponsors: [
-        { name: 'Platinum Sponsor 1', logo: 'platinum1.png' },
-        { name: 'Platinum Sponsor 2', logo: 'platinum2.png' }
-      ]
+      logo: ethereum,
+      name: "Ethereum"
+    },
+    {
+      logo: digitus,
+      name: "Digitus Business Solutions Pvt. Ltd."
     }
   ];
-
-  const powered = [
-        { name: 'powered Sponsor 1', logo: 'powered1.png' },
-        { name: 'powered Sponsor 2', logo: 'powered2.png' }
-  ]
 
   return (
     <div className='sponsors' id='sponsors'>
       <h1>Sponsors</h1>
       <div className='sponsor-category'>
-          <h2>POWERED BY</h2>
-          <div className='sponsor-cards'>
-            {powered.map((sponsor, idx) => (
-              <Sponsor_card key={idx} name={sponsor.name} logo={sponsor.logo} />
-            ))}
-          </div>
-      </div>
-      {sponsors.map((category, index) => (
-        <div key={index} className='sponsor-category'>
-          <h2>{category.category.charAt(0).toUpperCase() + category.category.slice(1)} TIER</h2>
-          <div className='sponsor-cards'>
-            {category.sponsors.map((sponsor, idx) => (
-              <Sponsor_card key={idx} name={sponsor.name} logo={sponsor.logo} />
-            ))}
-          </div>
+        <div className='sponsor-cards'>
+          {sponsors.map((sponsor, index) => (
+            <Sponsor_card key={index} name={sponsor.name} logo={sponsor.logo} />
+          ))}
         </div>
-      ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sponsors
+export default Sponsors;

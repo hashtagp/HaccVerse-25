@@ -4,7 +4,8 @@ import left_astro from "../../assets/astronut_left.svg";
 import right_astro from "../../assets/astronut_right.svg";
 import devfolio_logo from "../../assets/devfolio_logo.svg";
 import crash_rocket from "../../assets/crash_rocket.png";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/reva_logo.png";
+import hacc_logo from "../../assets/logo_hacc.png";
 import hamburger from "../../assets/hamburger.svg";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
   }
 
   useEffect(() => {
-    const hackathonDate = new Date("2025-01-27T00:00:00");
+    const hackathonDate = new Date("2025-03-21T00:00:00");
 
     const updateCountdown = () => {
       const now = new Date();
@@ -59,19 +60,18 @@ const Hero = () => {
     <div className="hero" id="home">
       <header className="header">
         <div className="logo">
-          <img src={logo} alt="HackVerse Logo"/>
+          <img src={logo} alt="REVA Logo"/>
+        </div>
+        <div className="hacc-logo">
+          <img src={hacc_logo} alt="HACC Logo"/>
         </div>
         <img src={hamburger} alt="hamburger" className="hamburger" onClick={hamburgerHandle}/>
         <nav className={`nav ${active==="active"?"active":""}`}>
           <h1 className={`cross ${active==="active"?"active":""}`} onClick={hamburgerHandle}>&#10005;</h1>
-          <a href="#home" onClick={()=>setMenu("home")}>Home</a>
           <a href="#about-us" onClick={()=>setMenu("about-us")}>About</a>
-          <a href="#">Track</a>
           <a href="#timeline"  onClick={()=>setMenu("timeline")}>Timeline</a>
           <a href="#prizes"  onClick={()=>setMenu("prizes")}>Prizes</a>
           <a href="#sponsors"  onClick={()=>setMenu("sponsors")}>Sponsors</a>
-          <a href="#faq"  onClick={()=>setMenu("faq")}>FAQ</a>
-          <a href="#">Contact Us</a>
         </nav>
       </header>
 
@@ -80,7 +80,7 @@ const Hero = () => {
           <h1 className="line1">HACC</h1>
           <h1 className="line2">VERSE</h1>
           <div className="line3">
-            <p>28 FEB - 1 MAR</p>
+            <p>21 MAR - 22 MAR</p>
             <p>32 HOUR HACKATHON</p>
           </div>
         </div>
@@ -100,6 +100,10 @@ const Hero = () => {
         </a>
 
         <div className="ellipse"></div>
+        <div className="association">
+          <p>IN ASSOCIATION WITH</p>
+          <img src={devfolio_logo} alt="Devfolio Logo" />
+        </div>
       </main>
 
       <img

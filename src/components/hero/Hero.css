@@ -16,7 +16,7 @@
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -28,7 +28,18 @@
 
 .logo img {
   height: 40px;
-  width: 60px;
+  width: 200px;
+}
+
+.hacc-logo{
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+.hacc-logo img {
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -202,12 +213,12 @@
 
 .astronaut-left {
   top: 10vh;
-  left: 0;
+  left: 10px;
 }
 
 .astronaut-right {
   top: 60vh;
-  right: 0;
+  right: 10px;
 }
 
 @keyframes float {
@@ -264,12 +275,19 @@
     height: fit-content;
     justify-content: center;
     height: 100%;
-    margin-top: 20%;
+  }
+
+  .ellipse{
+    display: none;
   }
 
   .cross.active{
     display: block;
     color: #fff;
+  }
+
+  .hacc-logo{
+    display: none;
   }
 
   .nav {

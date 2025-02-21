@@ -4,16 +4,26 @@ import AboutUs from "../src/components/aboutus/AboutUs";
 import Prizes from "../src/components/prizes/Prizes";
 import Sponsors from "../src/components/sponsors/Sponsors";
 import timeline from "../src/assets/timeline.svg";
+import spaceman from "../src/assets/spaceman.svg";
 import "./App.css";
 import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [visibility, setVisibility] = useState("hidden");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
   useEffect(() => {
     console.log("useEffect called");
-    const starsContainer = document.getElementById("stars");
 
+    // Detect screen width for timeline switching
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    const starsContainer = document.getElementById("stars");
     if (starsContainer) {
       const createStars = () => {
         const starCount = Math.ceil(window.innerWidth * window.innerHeight / 5000);
@@ -63,47 +73,104 @@ const App = () => {
 
     document.addEventListener("click", handleClick);
 
-    const screenHeight = window.innerHeight;
-
     const handleScroll = () => {
-      console.log("Scroll event triggered");
-      console.log("ScrollY:", window.scrollY);
-      console.log("Screen Height:", window.innerHeight);
-    
       if (window.scrollY > window.innerHeight) {
         setVisibility("visible");
-        console.log("visible");
       } else {
         setVisibility("hidden");
-        console.log("hidden");
       }
     };
-    
 
-    // Check initial scroll position
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
+    // Intersection Observer for timeline items
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    });
+
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    timelineItems.forEach((item) => observer.observe(item));
 
     return () => {
       document.removeEventListener("click", handleClick);
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      observer.disconnect();
     };
   }, []);
 
   return (
     <div className="relative">
       <div className="app">
-      <div id="stars" className="stars"></div>
-      <Hero />
-      <AboutUs />
-      <h1 className="timeline-heading" id="timeline">Timeline</h1>
-      <img src={timeline} alt="timeline" className="timeline" />
-      <Prizes />
-      <Sponsors />
-      <FAQ />
-      <a href="#home" className={`scroll-to-top ${visibility==="visible"?"":"hidden"}`}>&#8593;</a>
+        <div id="stars" className="stars"></div>
+        <Hero />
+        <AboutUs />
+        <h1 className="timeline-heading" id="timeline">Timeline</h1>
+
+        {isMobile ? (
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h3>1ST FEBRUARY</h3>
+                <p><strong>Registration starts</strong><br />Begin your journey! Register your team and prepare for an epic hackathon experience.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+            <img src={spaceman} className="spaceman" alt="Spaceman" />
+              <div className="timeline-content">
+                <h3>8TH FEBRUARY</h3>
+                <p><strong>Registration ends</strong><br />Last chance to join! Make sure your team is registered before the deadline.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h3>10TH FEBRUARY</h3>
+                <p><strong>Final Team Announcement</strong><br />The selected teams will be revealed! Check if your team has made it to the main event.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+            <img src={spaceman} className="spaceman" alt="Spaceman" />
+              <div className="timeline-content">
+                <h3>14TH FEBRUARY</h3>
+                <p><strong>Hackathon Begins</strong><br />The main event starts! 36 hours of coding challenges await.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h3>15TH FEBRUARY</h3>
+                <p><strong>Hackathon Ends</strong><br />Time to showcase your work! Submit your projects for evaluation.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <img src={spaceman} className="spaceman" alt="Spaceman" />
+              <div className="timeline-content">
+                <h3>15TH FEBRUARY</h3>
+                <p><strong>Result Announcement</strong><br />The winning teams will be revealed! Check if your team has made it to the top.</p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <img src={timeline} alt="timeline" className="timeline-img" />
+        )}
+
+        <Prizes />
+        <Sponsors />
+        <FAQ />
+        <Footer />
+        <a href="#home" className={`scroll-to-top ${visibility === "visible" ? "" : "hidden"}`}>&#8593;</a>
       </div>
     </div>
   );

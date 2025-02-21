@@ -5,7 +5,6 @@ const Sponsor_card = ({ name, logo }) => {
   return (
     <div className='sponsor-card'>
       <img src={logo} alt={name} className='sponsor-logo' />
-      <p className='sponsor-name'>{name}</p>
     </div>
   )
 }
