@@ -1,0 +1,52 @@
+.contact-us {
+    margin-bottom: 20px;
+    text-align: center; /* Centering the text */
+}
+  
+.contact {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+  
+.us {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    display: inline-block; 
+}
+.contact-us p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+      font-size: 60px;
+    }
+
+    .us {
+      font-size: 60px;
+    }
+    .contact-us p {
+        font-size: 25px; 
+        text-align: center; /* Centering the paragraph text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+      font-size: 40px;
+    }
+
+    .us {
+      font-size: 40px;
+    }
+    .contact-us p {
+        font-size: 15px; 
+        text-align: center; /* Centering the paragraph text */
+    }
+}

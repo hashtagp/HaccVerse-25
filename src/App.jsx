@@ -6,6 +6,8 @@ import Sponsors from "../src/components/sponsors/Sponsors";
 import timeline from "../src/assets/timeline.svg";
 import "./App.css";
 import FAQ from "./components/FAQ/FAQ";
+import Footer from './components/footer/Footer';
+import ContactUs from './components/contactus/ContactUs';
 
 const App = () => {
   const [visibility, setVisibility] = useState("hidden");
@@ -103,6 +105,7 @@ const App = () => {
       <Prizes />
       <Sponsors />
       <FAQ />
+      <Footer />
       <a href="#home" className={`scroll-to-top ${visibility==="visible"?"":"hidden"}`}>&#8593;</a>
       </div>
     </div>

@@ -1,0 +1,111 @@
+.footer {
+  padding: 40px;
+  width: 80%;
+  background: black;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.footer h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Signika Negative', sans-serif;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.footer-content-left, .footer-content-center, .footer-content-right {
+  flex: 1 1 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content-center ul, .footer-content-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content-center ul li, .footer-content-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer-content-center ul li a img, .footer-content-right ul li a img {
+  width: 30px; /* Remains unchanged */
+  height: 30px; /* Remains unchanged */
+}
+
+.footer-logo {
+  width: 180px; /* Increased from 50px to 180px (3.6x) */
+  height: 150px; /* Increased from 50px to 150px (3x) */
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  .footer-logo {
+    width: 162px; /* Increased from 45px to 162px (3.6x) */
+    height: 135px; /* Increased from 45px to 135px (3x) */
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-logo {
+    width: 144px; /* Increased from 40px to 144px (3.6x) */
+    height: 120px; /* Increased from 40px to 120px (3x) */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 126px; /* Increased from 35px to 126px (3.6x) */
+    height: 105px; /* Increased from 35px to 105px (3x) */
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left, .footer-content-center, .footer-content-right {
+    flex: 1 1 100%;
+    padding: 20px 0;
+  }
+
+  .footer h1, .footer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 108px; /* Increased from 30px to 108px (3.6x) */
+    height: 90px; /* Increased from 30px to 90px (3x) */
+  }
+}
+
+.logo img {
+  width: 50px; /* Remains unchanged */
+  height: 50px; /* Remains unchanged */
+  margin-bottom: 10px;
+}
+
+.cr {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
