@@ -43,6 +43,10 @@
     border-radius: 5px;
 }
 
+.footer-content-left p{
+    font-family: "Signika Negative", sans-serif;
+}
+
 .footer-content-right .socials {
     display: flex;
     flex-direction: row;
@@ -118,6 +122,22 @@
     background-color: #ffffff;
     font-family: "Roboto", sans-serif;
     text-align: center;
+}
+
+.footer-content-center h1{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.footer-content-center iframe{
+    border-radius: 15px;
+}
+
+.footer-content-right h1 {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.footer-content-right ul li{
+    font-family: 'Signika Negative', sans-serif;
 }
 
 @media (max-width: 1000px) {

@@ -33,15 +33,15 @@ const FAQ = () => {
     },
     {
       question: 'What’s the team size?',
-      answer: 'Teams can have 2–4 members. Small but mighty—that’s the way to go!'
+      answer: 'Teams can have 3–4 members. Small but mighty—that’s the way to go!'
     },
     {
       question: 'Is there any registration fee?',
-      answer: 'Round 1? Completely free. Round 2 (Grand Finale)? ₹500 per team. Totally worth it for the showdown!'
+      answer: 'Round 1? Completely free. Round 2 (Grand Finale)? Also free! Get ready for the ultimate showdown!'
     },
     {
       question: 'Will food and accommodation be provided?',
-      answer: 'Yes! For the Grand Finale, food and accommodation are on us. Just bring your ideas and energy!'
+      answer: 'Yes! For the Grand Finale, food is on us. Accommodation is available for ₹900 on prior request. Just bring your ideas and energy!'
     },
   ];
 

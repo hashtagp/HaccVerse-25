@@ -28,11 +28,6 @@ const Sponsors = () => {
       logo: digitus,
       name: "Digitus Business Solutions Pvt. Ltd.",
       link: "https://www.digitusbiz.com/"
-    },
-    {
-      logo: xDay,
-      name: "0x.Day",
-      link: "https://0x.day/"
     }
   ];
 

@@ -119,7 +119,7 @@ const App = () => {
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-content">
-                <h3>1ST FEBRUARY</h3>
+                <h3>24TH FEBRUARY</h3>
                 <p><strong>Registration starts</strong><br />Begin your journey! Register your team and prepare for an epic hackathon experience.</p>
               </div>
             </div>
@@ -127,29 +127,36 @@ const App = () => {
             <div className="timeline-item">
             <img src={spaceman} className="spaceman" alt="Spaceman" />
               <div className="timeline-content">
-                <h3>8TH FEBRUARY</h3>
+                <h3>13TH MARCH</h3>
                 <p><strong>Registration ends</strong><br />Last chance to join! Make sure your team is registered before the deadline.</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-content">
-                <h3>10TH FEBRUARY</h3>
+                <h3>15TH MARCH</h3>
                 <p><strong>Final Team Announcement</strong><br />The selected teams will be revealed! Check if your team has made it to the main event.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <h3>17TH MARCH</h3>
+                <p><strong>Last Date for RSVP</strong><br />Finalists...Make sure to RSVP</p>
               </div>
             </div>
 
             <div className="timeline-item">
             <img src={spaceman} className="spaceman" alt="Spaceman" />
               <div className="timeline-content">
-                <h3>14TH FEBRUARY</h3>
+                <h3>21ST MARCH</h3>
                 <p><strong>Hackathon Begins</strong><br />The main event starts! 36 hours of coding challenges await.</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-content">
-                <h3>15TH FEBRUARY</h3>
+                <h3>22ND MARCH</h3>
                 <p><strong>Hackathon Ends</strong><br />Time to showcase your work! Submit your projects for evaluation.</p>
               </div>
             </div>
@@ -157,7 +164,7 @@ const App = () => {
             <div className="timeline-item">
               <img src={spaceman} className="spaceman" alt="Spaceman" />
               <div className="timeline-content">
-                <h3>15TH FEBRUARY</h3>
+                <h3>22ND MARCH</h3>
                 <p><strong>Result Announcement</strong><br />The winning teams will be revealed! Check if your team has made it to the top.</p>
               </div>
             </div>
