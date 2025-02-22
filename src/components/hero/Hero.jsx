@@ -7,6 +7,7 @@ import crash_rocket from "../../assets/crash_rocket.png";
 import logo from "../../assets/reva_logo.png";
 import hacc_logo from "../../assets/logo_hacc.png";
 import hamburger from "../../assets/hamburger.svg";
+import nest_logo from "../../assets/Nest_logo.png";
 
 const Hero = () => {
   const [countdown, setCountdown] = useState({
@@ -85,6 +86,13 @@ const Hero = () => {
           </div>
         </div>
 
+        <div className="association">
+          <p>IN ASSOCIATION WITH</p>
+          <a href="https://revanest.com/" target="_blank" rel="noreferrer">
+          <img src={nest_logo} alt="REVA NEST" />
+          </a>
+        </div>
+
         <div className="countdown">
           {Object.entries(countdown).map(([unit, value]) => (
             <div key={unit}>
@@ -100,10 +108,6 @@ const Hero = () => {
         </a>
 
         <div className="ellipse"></div>
-        <div className="association">
-          <p>IN ASSOCIATION WITH</p>
-          <img src={devfolio_logo} alt="Devfolio Logo" />
-        </div>
       </main>
 
       <img

@@ -56,7 +56,7 @@
 
 .card.gold {
     border: 5px solid gold;
-    height: 200px;
+    height: 250px;
     padding-bottom: 10px;
 }
 
@@ -89,7 +89,7 @@
 
 .card.silver {
     border: 5px solid silver;
-    height: 320px;
+    height: 350px;
     background: url("../../assets/silver_bg.svg") no-repeat center center;
     background-color: #fff;
     transform: perspective(600px) rotateY(-15deg);
@@ -101,7 +101,7 @@
 
 .card.bronze {
     border: 5px solid #cd7f32;
-    height: 320px;
+    height: 350px;
     background: url("../../assets/bronze_bg.svg") no-repeat center center;
     background-color: #fff;
     transform: perspective(600px) rotateY(15deg);

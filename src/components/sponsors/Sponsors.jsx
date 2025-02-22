@@ -5,24 +5,34 @@ import digitus from "../../assets/Digitus_logo.png";
 import polygon from "../../assets/Polygon_logo.webp";
 import ethereum from "../../assets/Ethereum_logo.webp";
 import devfolio from "../../assets/Devfolio_logo.webp";
+import xDay from "../../assets/0x.Day_logo.svg";
 
 const Sponsors = () => {
   const sponsors = [
     {
       logo: devfolio,
-      name: "Devfolio"
+      name: "Devfolio",
+      link: "https://devfolio.co/"
     },
     {
       logo: polygon,
-      name: "Polygon"
+      name: "Polygon",
+      link: "https://polygon.technology"
     },
     {
       logo: ethereum,
-      name: "Ethereum"
+      name: "Ethereum",
+      link: "https://ethereum.org/en"
     },
     {
       logo: digitus,
-      name: "Digitus Business Solutions Pvt. Ltd."
+      name: "Digitus Business Solutions Pvt. Ltd.",
+      link: "https://www.digitusbiz.com/"
+    },
+    {
+      logo: xDay,
+      name: "0x.Day",
+      link: "https://0x.day/"
     }
   ];
 
@@ -32,7 +42,9 @@ const Sponsors = () => {
       <div className='sponsor-category'>
         <div className='sponsor-cards'>
           {sponsors.map((sponsor, index) => (
+            <a href={sponsor.link} target='_blank' rel='noreferrer' key={index}>
             <Sponsor_card key={index} name={sponsor.name} logo={sponsor.logo} />
+            </a>
           ))}
         </div>
       </div>
