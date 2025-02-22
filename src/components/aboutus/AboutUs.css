@@ -180,6 +180,12 @@
     }
   }
 
+@media screen and (max-width: 575px){
+  .right img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 486px){
   .about-us{
     width: 90%;
