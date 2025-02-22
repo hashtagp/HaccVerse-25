@@ -11,18 +11,18 @@ const Sponsors = () => {
   const sponsors = [
     {
       logo: devfolio,
-      name: "Devfolio",
+      name: "DEVFOLIO LOGO",
       link: "https://devfolio.co/"
     },
     {
       logo: polygon,
-      name: "Polygon",
+      name: "POLYGON LOGO",
       link: "https://polygon.technology"
     },
     {
       logo: ethereum,
-      name: "Ethereum",
-      link: "https://ethereum.org/en"
+      name: "ETHINDIA LOGO",
+      link: "https://ethindia.co"
     },
     {
       logo: digitus,
