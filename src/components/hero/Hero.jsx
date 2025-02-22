@@ -57,6 +57,17 @@ const Hero = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
+
   return (
     <div className="hero" id="home">
       <header className="header">
@@ -102,10 +113,12 @@ const Hero = () => {
           ))}
         </div>
 
-        <a href="#" className={`apply-button ${disabled}`} >
-        <img src={disabled === "disabled" ? crash_rocket : devfolio_logo} alt="Devfolio Logo" className="h-8" />
-          {text}
-        </a>
+        <div 
+	        className="apply-button" 
+	        data-hackathon-slug="https://haccverse.devfolio.co" 
+	        data-button-theme="light"
+	        style={{height: "44px", width: "312px"}}
+        ></div>
 
         <div className="ellipse"></div>
       </main>
