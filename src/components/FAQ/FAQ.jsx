@@ -41,7 +41,7 @@ const FAQ = () => {
     },
     {
       question: 'Will food and accommodation be provided?',
-      answer: 'Yes! For the Grand Finale, food is on us. Accommodation is available for ₹900 on prior request. Just bring your ideas and energy!'
+      answer: 'Yes! For the Grand Finale, food is on us. Accommodation is available for ₹900/person on prior request. Just bring your ideas and energy!'
     },
   ];
 

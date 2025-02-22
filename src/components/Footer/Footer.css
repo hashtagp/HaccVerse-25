@@ -2,7 +2,8 @@
 
 .footer {
     color: #000; /* Changed text color to black for better contrast */
-    background-color: #ffffff; /* White background */
+    background-color: #D9D9D9; /* White background */
+    opacity: 0.9; /* Slightly transparent */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +17,7 @@
 .footer-content {
     width: 100%;
     display: grid;
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 80px;
 }
@@ -24,7 +25,7 @@
 .footer-content-left, .footer-content-right, .footer-content-center {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     gap: 20px;
 }
 
@@ -39,7 +40,7 @@
 }
 
 .footer-content-left .footer-logo img{
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     border-radius: 5px;
 }
 
@@ -78,7 +79,7 @@
 }
 
 .footer-content-right ul {
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     display: flex;
     flex-direction: column;
     margin: auto auto;
@@ -88,7 +89,7 @@
     list-style: none;
     text-align: left;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     cursor: pointer;
 }
 
@@ -101,13 +102,13 @@
 
 .footer-content-right h1, .footer-content-center h1, .footer-content-left h1 {
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     color: black;
     text-align: center;
 }
 
 .footer-content-left p {
-    background-color: #ffffff;
+    background-color: #D9D9D9;
 }
 
 .footer hr {
@@ -119,7 +120,7 @@
 }
 
 .footer .cr p {
-    background-color: #ffffff;
+    background-color: #D9D9D9;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }

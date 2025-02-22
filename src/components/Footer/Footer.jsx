@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="footer-content-right">
           <h1>Contacts</h1>
           <ul>
-            <li>Lohith P: +91-7483856694</li>
-            <li>Vivith: +91-6366335543</li>
+            <li>Rahul: +91-6363508155</li>
+            <li>Pritam: +91-8904288562</li>
             <li><a href="mailto:hashhacc@gmail.com">hashhacc@gmail.com</a></li>
             <ul className="socials">
             <li>
