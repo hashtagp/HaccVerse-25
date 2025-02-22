@@ -31,7 +31,7 @@ const Hero = () => {
   }
 
   useEffect(() => {
-    const hackathonDate = new Date("2025-03-21T00:00:00");
+    const hackathonDate = new Date("2025-03-13T00:00:00");
 
     const updateCountdown = () => {
       const now = new Date();
