@@ -115,7 +115,7 @@ const Hero = () => {
 
         <div 
 	        className="apply-button" 
-	        data-hackathon-slug="https://haccverse.devfolio.co" 
+	        data-hackathon-slug="haccverse" 
 	        data-button-theme="light"
 	        style={{height: "44px", width: "312px"}}
         ></div>
