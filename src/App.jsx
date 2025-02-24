@@ -8,6 +8,7 @@ import spaceman from "../src/assets/spaceman.svg";
 import "./App.css";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
+import HackathonTracks from "./components/HackathonTracks/HackathonTracks";
 
 const App = () => {
   const [visibility, setVisibility] = useState("hidden");
@@ -113,6 +114,7 @@ const App = () => {
         <div id="stars" className="stars"></div>
         <Hero />
         <AboutUs />
+        <HackathonTracks/>
         <h1 className="timeline-heading" id="timeline">Timeline</h1>
 
         {isMobile ? (
