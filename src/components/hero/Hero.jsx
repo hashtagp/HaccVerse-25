@@ -21,14 +21,13 @@ const Hero = () => {
   const [menu, setMenu] = useState("home");
   const [active, setActive] = useState("inactive");
 
-  const hamburgerHandle = ()=>{
-    if(active==="active"){
+  const hamburgerHandle = () => {
+    if (active === "active") {
       setActive("inactive");
-    }
-    else{
+    } else {
       setActive("active");
     }
-  }
+  };
 
   useEffect(() => {
     const hackathonDate = new Date("2025-03-13T00:00:00");
@@ -57,33 +56,43 @@ const Hero = () => {
     };
   }, []);
 
-  React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
-}, []);
+    };
+  }, []);
 
   return (
     <div className="hero" id="home">
       <header className="header">
         <div className="logo">
-          <img src={logo} alt="REVA Logo"/>
+          <img src={logo} alt="REVA Logo" />
         </div>
         <div className="hacc-logo">
-          <img src={hacc_logo} alt="HACC Logo"/>
+          <img src={hacc_logo} alt="HACC Logo" />
         </div>
-        <img src={hamburger} alt="hamburger" className="hamburger" onClick={hamburgerHandle}/>
-        <nav className={`nav ${active==="active"?"active":""}`}>
-          <h1 className={`cross ${active==="active"?"active":""}`} onClick={hamburgerHandle}>&#10005;</h1>
-          <a href="#about-us" onClick={()=>setMenu("about-us")}>About</a>
-          <a href="#timeline"  onClick={()=>setMenu("timeline")}>Timeline</a>
-          <a href="#prizes"  onClick={()=>setMenu("prizes")}>Prizes</a>
-          <a href="#sponsors"  onClick={()=>setMenu("sponsors")}>Sponsors</a>
+        <img src={hamburger} alt="hamburger" className="hamburger" onClick={hamburgerHandle} />
+        <nav className={`nav ${active === "active" ? "active" : ""}`}>
+          <h1 className={`cross ${active === "active" ? "active" : ""}`} onClick={hamburgerHandle}>
+            &#10005;
+          </h1>
+          <a href="#about-us" onClick={() => {setMenu("about-us");hamburgerHandle()}}>
+            About
+          </a>
+          <a href="#timeline" onClick={() => {setMenu("timeline");hamburgerHandle()}}>
+            Timeline
+          </a>
+          <a href="#prizes" onClick={() => {setMenu("prizes");hamburgerHandle()}}>
+            Prizes
+          </a>
+          <a href="#sponsors" onClick={() => {setMenu("sponsors");hamburgerHandle()}}>
+            Sponsors
+          </a>
         </nav>
       </header>
 
@@ -100,7 +109,7 @@ const Hero = () => {
         <div className="association">
           <p>IN ASSOCIATION WITH</p>
           <a href="https://revanest.com/" target="_blank" rel="noreferrer">
-          <img src={nest_logo} alt="REVA NEST" />
+            <img src={nest_logo} alt="REVA NEST" />
           </a>
         </div>
 
@@ -113,26 +122,18 @@ const Hero = () => {
           ))}
         </div>
 
-        <div 
-	        className="apply-button" 
-	        data-hackathon-slug="haccverse" 
-	        data-button-theme="light"
-	        style={{height: "44px", width: "312px"}}
+        <div
+          className="apply-button"
+          data-hackathon-slug="haccverse"
+          data-button-theme="light"
+          style={{ height: "44px", width: "312px" }}
         ></div>
 
         <div className="ellipse"></div>
       </main>
 
-      <img
-        src={left_astro}
-        alt="Astronaut Left"
-        className="astronaut astronaut-left"
-      />
-      <img
-        src={right_astro}
-        alt="Astronaut Right"
-        className="astronaut astronaut-right"
-      />
+      <img src={left_astro} alt="Astronaut Left" className="astronaut astronaut-left" />
+      <img src={right_astro} alt="Astronaut Right" className="astronaut astronaut-right" />
     </div>
   );
 };

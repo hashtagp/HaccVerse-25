@@ -74,7 +74,7 @@ const App = () => {
     document.addEventListener("click", handleClick);
 
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight/2) {
         setVisibility("visible");
       } else {
         setVisibility("hidden");

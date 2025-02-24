@@ -31,18 +31,6 @@
     }
 }
 
-@media screen and (max-width: 435px) {
-    .sponsor-card {
-        max-width: 100px;
-        max-height: 100px;
-        margin: 0.5rem;
-    }
-
-    .sponsor-card img{
-        max-width: 100px;
-        max-height: 100px;
-    }
-}
 /* @media screen and (max-width: 768px) {
     .sponsor-card {
         width: 150px;

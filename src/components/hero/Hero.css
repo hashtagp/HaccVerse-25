@@ -42,7 +42,6 @@
   width: 100px;
 }
 
-
 .nav a {
   color: white;
   text-decoration: none;
@@ -101,6 +100,9 @@
   padding: 0 20px;
   border-left: 5px solid #ccc;
   border-right: 5px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .name .line1 {
@@ -148,6 +150,9 @@
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .countdown div {
@@ -180,6 +185,9 @@
   transition: background 0.3s;
   align-items: center;
   gap: 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .disabled {
@@ -221,17 +229,20 @@
 .astronaut {
   position: absolute;
   width: 200px;
-  animation: float 4s infinite ease-in-out;
+  animation: float 4s infinite ease-in-out, fadeIn 1s ease-in-out forwards;
+  opacity: 0;
 }
 
 .astronaut-left {
   top: 10vh;
-  left: 10px;
+  left: 20px;
+  animation-delay: 1s;
 }
 
 .astronaut-right {
   top: 60vh;
-  right: 10px;
+  right: 20px;
+  animation-delay: 1s;
 }
 
 @keyframes float {
@@ -243,6 +254,15 @@
   }
   100% {
       transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -273,6 +293,18 @@
 
   .countdown div span {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero{
+    height: 100vh;
+   }
+   
+  .main{
+    height: fit-content;
+    justify-content: center;
+    height: 100%;
   }
 }
 
@@ -368,6 +400,12 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .astronaut{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .main{
     width: 60%;
@@ -414,7 +452,5 @@
     width: 80vw;
   }
 
-  .astronaut{
-    display: none;
-  }
+  
 }
