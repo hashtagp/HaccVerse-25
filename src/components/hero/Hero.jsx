@@ -71,10 +71,14 @@ const Hero = () => {
     <div className="hero" id="home">
       <header className="header">
         <div className="logo">
+          <a href="https://www.reva.edu.in/" target="_blank" rel="noreferrer">
           <img src={logo} alt="REVA Logo" />
+          </a>
         </div>
         <div className="hacc-logo">
+          <a href="https://hacc.co.in/" target="_blank" rel="noreferrer">
           <img src={hacc_logo} alt="HACC Logo" />
+          </a>
         </div>
         <img src={hamburger} alt="hamburger" className="hamburger" onClick={hamburgerHandle} />
         <nav className={`nav ${active === "active" ? "active" : ""}`}>
