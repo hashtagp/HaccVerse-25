@@ -121,7 +121,7 @@ const App = () => {
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-content">
-                <h3>24TH FEBRUARY</h3>
+                <h3>27TH FEBRUARY</h3>
                 <p><strong>Registration starts</strong><br />Begin your journey! Register your team and prepare for an epic hackathon experience.</p>
               </div>
             </div>
