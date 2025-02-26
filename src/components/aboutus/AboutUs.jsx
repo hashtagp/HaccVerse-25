@@ -46,11 +46,11 @@ const AboutUs = () => {
                 <h1 className="animate-item">HACC VERSE 2K25</h1>
                 <div class="text animate-item">
                 <img class="aboutus-astronaut" src={astronaut} alt="Astronaut"/>
-                <h2>JOIN US FOR AN EXCITING EVENT FILLED WITH TECHNOLOGY!</h2>
-                <p>JOIN US</p>
+                <h2>JOIN US FOR A THRILLING EVENT SHOWCASING THE LATEST IN TECHNOLOGY!</h2>
+                <p>BE PART OF THE EXPERIENCE!</p>
                 </div>
                 <img class="moon-phases animate-item" src={moonPhases} alt="Moon Phases"/>
-                <p>JOIN US FOR EXCITING MEMORIES!</p>
+                <p>CREATE UNFORGETTABLE MOMENTS WITH US!</p>
             </div>
             <div class="right">
                 <img className="animate-item" src={hackathon1} alt="hackathon1"/>
