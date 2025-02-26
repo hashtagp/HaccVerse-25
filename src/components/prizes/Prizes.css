@@ -59,6 +59,7 @@
     height: 250px;
     padding-bottom: 10px;
     background: url("../../assets/silver_bg.svg") no-repeat center center;
+    background-color: #fff;
 }
 
 .card.gold .prize-amount{
