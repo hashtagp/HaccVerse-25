@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faInstagram, faWhatsapp, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/footer_logo.svg";
 
 const Footer = () => {
@@ -37,18 +37,23 @@ const Footer = () => {
             <ul className="socials">
             <li>
               <a href="https://www.linkedin.com/company/hacc-thehackathon-and-coding-club/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} size="1x" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/the_hacc/profilecard/?igsh=MW43aThmZGx1eXh6YQ==" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="1x" />
               </a>
             </li>
             <li>
               <a href="https://chat.whatsapp.com/D53Ybf2CnVGBY969XsTL0K" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                <FontAwesomeIcon icon={faWhatsapp} size="1x" />
               </a>
+            </li>
+            <li>
+            <a href="https://discord.com/invite/s9XUhyz9" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faDiscord} size="1x" />
+            </a>
             </li>
           </ul>
           </ul>
