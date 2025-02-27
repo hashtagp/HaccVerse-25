@@ -41,7 +41,7 @@ const FAQ = () => {
     },
     {
       question: 'Will food and accommodation be provided?',
-      answer: 'Yes! For the Grand Finale, food and accommodation is on us. Just bring your ideas and energy!'
+      answer: 'Yes! For the Grand Finale, food is on us. Just bring your ideas and energy!'
     },
   ];
 
