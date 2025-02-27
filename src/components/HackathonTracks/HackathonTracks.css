@@ -21,6 +21,26 @@
     color: white;
 }
 
+.tracks-container a{
+    text-decoration: none;
+}
+
+.tracks-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.tracks-container p:hover {
+    background: rgba(74, 4, 4, 0.901);
+}
+
 .tracks {
     display: flex;
     flex-wrap: wrap;

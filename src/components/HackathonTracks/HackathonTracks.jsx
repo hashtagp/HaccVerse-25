@@ -10,6 +10,9 @@ const HackathonTracks = () => {
     return (
         <div className="tracks-container" id="tracks">
             <h1>Tracks</h1>
+            <a href='https://docs.google.com/presentation/d/1kJppDKE1crhvAq3lTUGCxBkChJREAElt/edit?usp=sharing&ouid=110406325175395284690&rtpof=true&sd=true'>
+            <p>PPT Template</p>
+            </a>
             <div className="tracks">
                 <div className="track">
                     <img src={coding} alt="AI & ML" />
