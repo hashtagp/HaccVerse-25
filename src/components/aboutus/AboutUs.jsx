@@ -38,12 +38,12 @@ const AboutUs = () => {
             <h1 className="animate-item">ABOUT US</h1>
             <div class="our-experience animate-item">
                 <h1>EXPERIENCE</h1>
-                <p>HaccVerse 25, the annual hackathon by the Hackathon and Coding Club (HACC), in association with REVA NEST Incubation Centre, invites developers, designers, and innovators to come together for an unforgettable experience of collaboration and creativity. Participants will tackle real-world challenges, build innovative solutions, and compete for exciting prizes while expanding their skills and network.</p>
+                <p>HaccVerse'25 , the annual hackathon by the Hackathon and Coding Club (HACC), in association with REVA NEST Incubation Centre, invites developers, designers, and innovators to come together for an unforgettable experience of collaboration and creativity. Participants will tackle real-world challenges, build innovative solutions, and compete for exciting prizes while expanding their skills and network.</p>
             </div>
         </div>
         <div class="aboutus-name">
             <div class="left">
-                <h1 className="animate-item">HACC VERSE 2K25</h1>
+                <h1 className="animate-item">HaccVerse'25</h1>
                 <div class="text animate-item">
                 <img class="aboutus-astronaut" src={astronaut} alt="Astronaut"/>
                 <h2>JOIN US FOR A THRILLING EVENT SHOWCASING THE LATEST IN TECHNOLOGY!</h2>
