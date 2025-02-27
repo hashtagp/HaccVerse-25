@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://chat.whatsapp.com/FRXKH7xvePHHRZSkVyMA82" target="_blank" rel="noopener noreferrer">
+              <a href="https://chat.whatsapp.com/D53Ybf2CnVGBY969XsTL0K" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} size="2x" />
               </a>
             </li>
