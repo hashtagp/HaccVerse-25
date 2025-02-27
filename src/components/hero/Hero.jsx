@@ -111,7 +111,6 @@ const Hero = () => {
         </div>
 
         <div className="association">
-          <p>IN ASSOCIATION WITH</p>
           <a href="https://revanest.com/" target="_blank" rel="noreferrer">
             <img src={nest_logo} alt="REVA NEST" />
           </a>
