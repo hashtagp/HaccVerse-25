@@ -8,6 +8,7 @@ const Prizes = () => {
   return (
     <div className="prizes" id="prizes">
       <h1>PRIZES</h1>
+      <p className="incubation-offer">3 months free incubation at REVA NEST - Incubation Centre worth ₹18,000</p>
       <div className="prizes-container">
         {/* Silver Medal - Left */}
         <div className="card silver">

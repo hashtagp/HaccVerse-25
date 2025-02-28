@@ -17,6 +17,29 @@
     border-radius: 15px;
 }
 
+.incubation-offer {
+    text-align: center;
+    color: #fff;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem auto 0;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, rgba(93, 8, 242, 0.9), rgba(130, 29, 253, 0.85));
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(93, 8, 242, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.incubation-offer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(93, 8, 242, 0.5);
+}
+
 .prizes-container {
     display: flex;
     justify-content: center;
