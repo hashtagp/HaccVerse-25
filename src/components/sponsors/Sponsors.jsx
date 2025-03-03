@@ -5,6 +5,7 @@ import digitus from "../../assets/Digitus_logo.png";
 import polygon from "../../assets/Polygon_logo.webp";
 import ethereum from "../../assets/Ethereum_logo.webp";
 import devfolio from "../../assets/Devfolio_logo.webp";
+import llmware from "../../assets/llmware_logo.png";
 import xDay from "../../assets/0x.Day_logo.svg";
 
 const Sponsors = () => {
@@ -15,11 +16,6 @@ const Sponsors = () => {
       link: "https://devfolio.co/"
     },
     {
-      logo: polygon,
-      name: "POLYGON LOGO",
-      link: "https://polygon.technology"
-    },
-    {
       logo: ethereum,
       name: "ETHINDIA LOGO",
       link: "https://ethindia.co"
@@ -28,7 +24,12 @@ const Sponsors = () => {
       logo: digitus,
       name: "Digitus Business Solutions Pvt. Ltd.",
       link: "https://www.digitusbiz.com/"
-    }
+    },
+    {
+      logo: llmware,
+      name: "LLMWARE LOGO",
+      link: "https://llmware.ai/"
+    },
   ];
 
   return (
