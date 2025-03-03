@@ -152,7 +152,7 @@ const App = () => {
             <img src={spaceman} className="spaceman" alt="Spaceman" />
               <div className="timeline-content">
                 <h3>21ST MARCH</h3>
-                <p><strong>Hackathon Begins</strong><br />The main event starts! 36 hours of coding challenges await.</p>
+                <p><strong>Hackathon Begins</strong><br />The main event starts! 32 hours of coding challenges await.</p>
               </div>
             </div>
 
