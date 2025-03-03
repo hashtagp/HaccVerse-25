@@ -40,7 +40,7 @@ const FAQ = () => {
       answer: 'Round 1? Completely free. Round 2 (Grand Finale)? Also free! Get ready for the ultimate showdown!'
     },
     {
-      question: 'Will food and accommodation be provided?',
+      question: 'Will food be provided?',
       answer: 'Yes! For the Grand Finale, food is on us. Just bring your ideas and energy!'
     },
   ];
