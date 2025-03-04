@@ -5,7 +5,7 @@ import digitus from "../../assets/Digitus_logo.png";
 import polygon from "../../assets/Polygon_logo.webp";
 import ethereum from "../../assets/Ethereum_logo.webp";
 import devfolio from "../../assets/Devfolio_logo.webp";
-import llmware from "../../assets/llmware_logo.png";
+import llmware from "../../assets/llmware_logo1.png";
 import xDay from "../../assets/0x.Day_logo.svg";
 
 const Sponsors = () => {
