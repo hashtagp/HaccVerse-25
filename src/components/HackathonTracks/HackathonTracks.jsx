@@ -12,7 +12,7 @@ const HackathonTracks = () => {
         <div className="tracks-container" id="tracks">
             <h1>Tracks</h1>
             <a href={Template} download>
-            <p>PPT Template</p>    
+            <p className='template'>Download PPT Template</p>    
             </a>
             <div className="tracks">
                 <div className="track">
