@@ -97,6 +97,9 @@ const Hero = () => {
           <a href="#sponsors" onClick={() => {setMenu("sponsors");hamburgerHandle()}}>
             Sponsors
           </a>
+          <a href="#tracks" onClick={() => {setMenu("tracks");hamburgerHandle()}}>
+            Tracks
+          </a>
         </nav>
       </header>
 
