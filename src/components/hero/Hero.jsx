@@ -98,7 +98,7 @@ const Hero = () => {
             Sponsors
           </a>
           <a href="#tracks" onClick={() => {setMenu("tracks");hamburgerHandle()}}>
-            Tracks
+            PPT Template
           </a>
         </nav>
       </header>
