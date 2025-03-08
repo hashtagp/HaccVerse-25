@@ -8,6 +8,7 @@ import logo from "../../assets/reva_logo.png";
 import hacc_logo from "../../assets/logo_hacc.png";
 import hamburger from "../../assets/hamburger.svg";
 import nest_logo from "../../assets/Nest_logo.png";
+import Template from "../../assets/HaccVerse'25_IdeaSubmission_Template.pptx";
 
 const Hero = () => {
   const [countdown, setCountdown] = useState({
@@ -97,9 +98,6 @@ const Hero = () => {
           <a href="#sponsors" onClick={() => {setMenu("sponsors");hamburgerHandle()}}>
             Sponsors
           </a>
-          <a href="#tracks" onClick={() => {setMenu("tracks");hamburgerHandle()}}>
-            PPT Template
-          </a>
         </nav>
       </header>
 
@@ -134,6 +132,10 @@ const Hero = () => {
           data-button-theme="light"
           style={{ height: "44px", width: "312px" }}
         ></div>
+
+            <a href={Template} download>
+            <p className='template'>Download PPT Template</p>    
+            </a>
 
         <div className="ellipse"></div>
       </main>

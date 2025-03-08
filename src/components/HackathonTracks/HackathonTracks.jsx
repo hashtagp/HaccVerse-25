@@ -5,15 +5,11 @@ import secure from '../../assets/secure.png';
 import cyberSecurity from '../../assets/cyber-security.png';
 import iot from '../../assets/iot.png';
 import thinkOutOfTheBox from '../../assets/think-out-of-the-box.png';
-import Template from "../../assets/HaccVerse'25_IdeaSubmission_Template.pptx";
 
 const HackathonTracks = () => {
     return (
         <div className="tracks-container" id="tracks">
             <h1>Tracks</h1>
-            <a href={Template} download>
-            <p className='template'>Download PPT Template</p>    
-            </a>
             <div className="tracks">
                 <div className="track">
                     <img src={coding} alt="AI & ML" />

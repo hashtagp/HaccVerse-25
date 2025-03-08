@@ -33,6 +33,11 @@ const AboutUs = () => {
   }, []);
 
   return (
+    <>
+    <div className="rounds">
+      <p>Round 1- Idea Submission</p>
+      <p>Round 2 - Grand Finale</p>
+    </div>
     <div className={`about-us ${isVisible ? "active" : ""}`} id="about-us">
         <div class="experience">
             <h1 className="animate-item">ABOUT US</h1>
@@ -60,6 +65,7 @@ const AboutUs = () => {
             </div>
         </div>
     </div>
+    </>
   );
 };
 
