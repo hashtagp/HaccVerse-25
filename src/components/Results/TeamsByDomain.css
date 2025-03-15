@@ -1,0 +1,307 @@
+.teams-section {
+    padding: 4rem 1rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .teams-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .teams-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    background: linear-gradient(to right, #4D00FF, #7302EC, #8304D9, #9A0BE1, #5607F5);
+    width: fit-content;
+    margin: 0 auto 3rem;
+    border-radius: 15px;
+    letter-spacing: 5px;
+  }
+  
+  .domain-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .domain-tabs button {
+    background: rgba(79, 76, 252, 0.2);
+    color: white;
+    border: 2px solid #4F4CFC;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Signika Negative', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .domain-tabs button:hover {
+    background: rgba(79, 76, 252, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .domain-tabs button.tab-active {
+    background: #4F4CFC;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 76, 252, 0.5);
+  }
+  
+  .domain-content {
+    margin-top: 2rem;
+  }
+  
+  .domain-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.8rem;
+    color: #9A0BE1;
+    text-shadow: 0 0 10px rgba(154, 11, 225, 0.5);
+  }
+  
+  .teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .team-card {
+    background: black;
+    border: 2px solid #4F4CFC;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    aspect-ratio: 1.5/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(79, 76, 252, 0.3);
+  }
+  
+  .team-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(79, 76, 252, 0.2), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .team-card:hover::before {
+    animation: shine 1.5s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes shine {
+    0% {
+      top: -50%;
+      left: -50%;
+    }
+    100% {
+      top: 150%;
+      left: 150%;
+    }
+  }
+  
+  .team-card-inner {
+    padding: 1.5rem;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .team-card h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(79, 76, 252, 0.7);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .domain-tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .domain-tabs button {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+    
+    .teams-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      padding: 0 15px;
+      gap: 1.5rem;
+    }
+    
+    .teams-heading {
+      font-size: 1rem;
+      padding: 15px;
+      letter-spacing: 3px;
+    }
+    
+    .team-card h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Update your media query section for mobile with these changes */
+
+@media screen and (max-width: 768px) {
+    .domain-tabs {
+      position: relative;
+      width: 80%;
+      margin: 0 auto 30px;
+      z-index: 100;
+    }
+    
+    /* Style for dropdown container */
+    .domain-tabs {
+      display: block;
+    }
+    
+    /* Style the active button to look like a dropdown toggle */
+    .domain-tabs button.dropdown-trigger {
+      width: 100%;
+      margin-bottom: 0;
+      position: relative;
+      text-align: left;
+      padding-right: 30px; /* Space for dropdown arrow */
+    }
+    
+    /* Create dropdown arrow with pseudo-element */
+    .domain-tabs button.dropdown-trigger::after {
+      content: "▼";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      transition: transform 0.3s;
+    }
+    
+    /* When dropdown is open, rotate arrow */
+    .domain-tabs.open button.dropdown-trigger::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+    
+    /* Style for the dropdown menu */
+    .domain-tabs button {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+      animation: slideDown 0.3s ease forwards;
+      text-align: left;
+    }
+    
+    /* Animation for dropdown items appearing */
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Active tab always on top of dropdown */
+    .domain-tabs button.tab-active {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 2px;
+    }
+    
+    /* Open dropdown buttons */
+    .domain-tabs.open button:not(:first-child) {
+      border-top: 1px solid rgba(79, 76, 252, 0.3);
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 10;
+    }
+    
+    .domain-tabs.open button:last-child {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    /* Other mobile styles */
+    .teams-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      padding: 0 15px;
+      gap: 1.5rem;
+    }
+    
+    .teams-heading {
+      font-size: 1rem;
+      padding: 15px;
+      letter-spacing: 3px;
+    }
+    
+    .team-card h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Add this to your TeamsByDomain.css file */
+
+.teams-section-header {
+  margin: 30px 0 20px;
+  text-align: center;
+}
+
+.teams-status-heading {
+  display: inline-block;
+  color: white;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.4rem;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: rgba(79, 76, 252, 0.7);
+  margin-bottom: 20px;
+}
+
+.teams-section-header.waitlist .teams-status-heading {
+  background: rgba(255, 165, 0, 0.7);  /* Orange-ish color for waitlist */
+}
+
+.team-card.waitlisted {
+  border-color: #FFA500;  /* Orange border for waitlisted teams */
+}
+
+.team-card.waitlisted::before {
+  background: linear-gradient(45deg, transparent, rgba(255, 165, 0, 0.2), transparent);
+}
+
+.waitlist-grid {
+  opacity: 0.85;  /* Slightly faded look for waitlisted teams */
+}
+
+@media screen and (max-width: 768px) {
+  .teams-status-heading {
+    font-size: 1.1rem;
+    padding: 6px 15px;
+  }
+}

@@ -9,6 +9,7 @@ import "./App.css";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import HackathonTracks from "./components/HackathonTracks/HackathonTracks";
+import TeamsByDomain from "./components/Results/TeamsByDomain";
 
 const App = () => {
   const [visibility, setVisibility] = useState("hidden");
@@ -115,6 +116,7 @@ const App = () => {
         <Hero />
         <AboutUs />
         <HackathonTracks/>
+        <TeamsByDomain />
         <h1 className="timeline-heading" id="timeline">Timeline</h1>
 
         {isMobile ? (
