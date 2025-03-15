@@ -81,7 +81,7 @@ const TeamsByDomain = () => {
         "POSTMAN_CREW",
         "Neural Nexus"
       ],
-      waitlistedTeams: ["An0n", "hackstreet", "Hack Warriors", "hackrify", "TECH4CE", "HerSafe Tech"]
+      waitlistedTeams: ["An0n", "hackstreet", "Hack Warriors", "hackrify", "TECH4CE", "HerSafe Tech","Zenken"]
     },
     {
       name: "Web3 & Blockchain",
