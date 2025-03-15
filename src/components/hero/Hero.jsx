@@ -86,8 +86,8 @@ const Hero = () => {
           <h1 className={`cross ${active === "active" ? "active" : ""}`} onClick={hamburgerHandle}>
             &#10005;
           </h1>
-          <a href="#about-us" onClick={() => {setMenu("about-us");hamburgerHandle()}}>
-            About
+          <a href="#teams" onClick={() => {setMenu("results");hamburgerHandle()}}>
+            Results
           </a>
           <a href="#timeline" onClick={() => {setMenu("timeline");hamburgerHandle()}}>
             Timeline

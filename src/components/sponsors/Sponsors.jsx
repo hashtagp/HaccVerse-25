@@ -7,6 +7,7 @@ import ethereum from "../../assets/Ethereum_logo.webp";
 import devfolio from "../../assets/Devfolio_logo.webp";
 import llmware from "../../assets/llmware_logo1.png";
 import xDay from "../../assets/0x.Day_logo.svg";
+import gts from "../../assets/GTS_TECHLABS.png";
 
 const Sponsors = () => {
   const sponsors = [
@@ -30,6 +31,11 @@ const Sponsors = () => {
       name: "LLMWARE LOGO",
       link: "https://llmware.ai/"
     },
+    {
+      logo: gts,
+      name: "GTS TECHLABS LOGO",
+      link: "https://www.gtstechlabs.com/"
+    }
   ];
 
   return (
