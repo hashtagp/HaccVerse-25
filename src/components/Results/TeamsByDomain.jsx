@@ -69,7 +69,6 @@ const TeamsByDomain = () => {
       name: "AI & ML",
       teams: [
         "TechtonicAI",
-        "PYK CODERS",
         "CODEX",
         "BruteForz",
         "Cryptic Nomand",
