@@ -104,9 +104,10 @@ const TeamsByDomain = () => {
         "Stacks & Queues",
         "CODE AT WILL",
         "ETHIX",
-        "The Exploit Squad"
+        "The Exploit Squad",
+        "RedHat Squad", 
       ],
-      waitlistedTeams: ["Secure Squad", "RedHat Squad", "TRUST", "bi0s"]
+      waitlistedTeams: ["Secure Squad", "TRUST", "bi0s"]
     },
     {
       name: "Internet of Things",
