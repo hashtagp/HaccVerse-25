@@ -80,7 +80,7 @@ const TeamsByDomain = () => {
         "POSTMAN_CREW",
         "Neural Nexus"
       ],
-      waitlistedTeams: ["An0n", "hackstreet", "Hack Warriors", "hackrify", "TECH4CE", "HerSafe Tech","Zenken"]
+      waitlistedTeams: [ "TECH4CE","Zenken"]
     },
     {
       name: "Web3 & Blockchain",
@@ -93,7 +93,7 @@ const TeamsByDomain = () => {
         "Merge Conflict",
         "Web3Paglu"
       ],
-      waitlistedTeams: ["S3K", "CyberVanguard", "Prompters"]
+      waitlistedTeams: ["S3K"]
     },
     {
       name: "Cybersecurity",
@@ -106,7 +106,7 @@ const TeamsByDomain = () => {
         "The Exploit Squad",
         "RedHat Squad", 
       ],
-      waitlistedTeams: ["Secure Squad", "TRUST", "bi0s"]
+      waitlistedTeams: ["Secure Squad", "bi0s"]
     },
     {
       name: "Internet of Things",
@@ -135,7 +135,7 @@ const TeamsByDomain = () => {
         "heretic",
         "Chaotic Bots"
       ],
-      waitlistedTeams: ["Impact4", "Team Existence", "M2L", "CodeWin"]
+      waitlistedTeams: ["CodeWin"]
     }
   ];
 
